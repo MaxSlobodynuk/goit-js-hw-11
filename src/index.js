@@ -74,6 +74,8 @@ async function performSearch(searchQuery) {
             Notiflix.Notify.info("We're sorry, but you've reached the end of search results.");
         }
 
+        Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`); // Повідомлення з кількістю знайдених зображень
+
         initializeLightbox(); // Ініціалізуємо SimpleLightbox для нових карток зображень
     }
 }
